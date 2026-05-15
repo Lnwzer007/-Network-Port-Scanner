@@ -2,7 +2,7 @@ import socket
 import sys
 from datetime import datetime
 
-TARGET_IP = "TYPE HERE" # ไอพีเป้าหมาย
+TARGET_IP = "TYPE HERE" # IP เป้าหมาย
 TIMEOUT = 1.5
 PORTS = [21, 22, 23, 80, 81, 82, 83, 88, 443, 554, 1935, 5000, 8000, 8080, 9000, 37777]
 
@@ -25,14 +25,14 @@ def main():
             s.close()
 
     except KeyboardInterrupt:
-        print("\n[!] Execution interrupted by user. Exiting...")
+        print("\nExecution interrupted by user")
         sys.exit(0)
     except Exception as e:
-        print(f"\n[!] Runtime error: {e}")
+        print(f"\n[Runtime error: {e}")
         sys.exit(1)
 
     print("-" * 50)
-    print("Scan completed successfully.")
+    print("การสแกนเสร็จสมบูรณ์")
 
 if __name__ == "__main__":
     main()
