@@ -8,9 +8,9 @@ TIMEOUT = 2.5
 PORTS = [21, 22, 23, 80, 81, 82, 83, 88, 443, 554, 1935, 5000, 8000, 8080, 9000, 37777]
 
 # ตั้งค่า proxy
-PROXY_HOST = "123.45.67.89"
-PROXY_PORT = 1080
-PROXY_TYPE = socks.SOCKS5
+PROXY_HOST = "IP PROXY HERE"
+PROXY_PORT = # PORT HERE
+PROXY_TYPE = socks.SOCKS5 # รองรับ SOCKS5, SOCKS4, HTTP
 
 def init_proxy():
     socks.set_default_proxy(PROXY_TYPE, PROXY_HOST, PROXY_PORT)
